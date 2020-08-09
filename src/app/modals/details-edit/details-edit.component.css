@@ -1,0 +1,411 @@
+
+/* this code is copied from my old demo pojects  */
+
+.main {
+  background: #f8f8f8;
+  padding: 150px 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #222;
+  background: #f8f8f8;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+.main p{
+    font-size: larger!important;
+    font-weight: 500!important;
+    margin-top: 12px!important;
+}
+.skillslist-cls{
+  display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.skills-secion-cls{
+  width: 98%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.skills-section-cls input{
+  width: 50%;
+  margin:5px;
+}
+
+
+.candidateExplevel-cls{
+  font-size: large;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-weight: 500;
+    color: blue;
+}
+
+.details-cls{
+
+  width:100%;
+}
+
+#skills{
+  width:85%;
+  height:100px;
+}
+
+.skills-cls{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.mat-dialog-container {
+  padding:0px!important;
+}
+
+
+#animationregister{
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.8s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration:0.8s;
+}
+
+@keyframes example {
+  0%   {opacity:1;transform: scale(0, 0);filter:blur(20px)}
+  /* 50%  {opacity: 0.5;transform: scale(0.6, 0.6);} */
+  100% {opacity: 1;transform: scale(1, 1);filter:blur(0px)}
+}
+
+@-webkit-keyframes example {
+  0%   {opacity:1;transform: scale(0, 0);filter:blur(20px)}
+  /* 50%  {opacity: 0.5;transform: scale(0.6, 0.6);} */
+  100% {opacity: 1;transform: scale(1, 1);filter:blur(0px)}
+}
+
+.signup {
+  margin-bottom: 150px;
+}
+
+.container {
+  width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+}
+
+.signup-content {
+  padding: 75px 0;
+}
+
+display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.signup-form {
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 34px;
+}
+
+.signup-form, .signup-image, .signin-form, .signin-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+div {
+  display: block;
+}
+
+.form-title {
+  margin-bottom: 33px;
+}
+
+h2 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #222;
+  font-family: Poppins;
+  font-size: 36px;
+}
+
+.register-form {
+  width: 100%;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+
+label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  color: #222;
+}
+
+label {
+  cursor: default;
+}
+
+.material-icons-name {
+  font-size: 18px;
+}
+
+.zmdi {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-weight:bolder;
+  padding: 6px 30px;
+  /* font-family: Poppins; */
+  font-family:monospace;
+  color:darkblue;
+  box-sizing: border-box;
+  font-size:medium;
+}
+
+.form-group:last-child {
+  margin-bottom: 0px;
+}
+
+.signup-image-link {
+  font-size: 14px;
+  color: #222;
+  display: block;
+  text-align: center;
+
+}
+.form-submit {
+  display: inline-block;
+  background: #2895f9;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+input:focus {
+  border-bottom: 1px solid #222;
+}
+.zmdi-account:before {
+  content: '\f207';
+}
+
+input[type=checkbox]:not(old) + label {
+  display: inline-block;
+  line-height: 1.5em;
+  margin-top: 6px;
+}
+
+.label-agree-term {
+  position: relative;
+  top: 0%;
+  transform: translateY(0);
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  color: #222;
+}
+
+label {
+  cursor: default;
+}
+.signup-image-link {
+  font-size: 14px;
+  color: #222;
+  display: block;
+  text-align: center;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signin-content {
+  padding-top: 67px;
+  padding-bottom: 87px;
+}
+display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
+  display: flex;
+  display: -webkit-flex;
+}
+
+
+
+.signin-image {
+  margin-left: 110px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.signup-form, .signup-image, .signin-form, .signin-image {
+  width: 50%;
+  overflow: hidden;
+}
+
+.signin-form {
+  margin-right: 90px;
+  margin-left: 80px;
+}
+.signup-form, .signup-image, .signin-form, .signin-image {
+  width: 50%;
+  overflow: hidden;
+}
+.social-login {
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  margin-top: 80px;
+}
+display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
+  display: flex;
+  display: -webkit-flex;
+}
+.social-label {
+  display: inline-block;
+  margin-right: 15px;
+}
+.socials li a i {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.zmdi-facebook {
+  background: #3b5998;
+}
+.display-flex-center {
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+.zmdi {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
+  display: flex;
+  display: -webkit-flex;
+}
+.zmdi-twitter {
+  background: #1da0f2;
+}
+.zmdi-google {
+  background: #e72734;
+}
+.zmdi-google:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+
+.form-title {
+  margin-bottom: 33px;
+  font-style: oblique;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+h2 {
+  line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #222;
+  font-family: Poppins;
+  font-size: 36px;
+}
+
+.signin-content {
+  padding-top: 67px;
+  padding-bottom: 87px;
+}

@@ -1,0 +1,76 @@
+<!-- Sing in  Form -->
+<section class="sign-in" id="sign-inid">
+  <div class="container" id="animationregister">
+    <div class="signin-content" *ngIf="!detailflag">
+      <div class="signin-form">
+        <h2 class="form-title">{{title}}</h2>
+        <form [formGroup]="candidateForm" class="register-form" id="login-form">
+          <div class="form-group">
+            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+            <input type="text" name="your_name" id="your_name" placeholder="Candidate Name"
+              formControlName="candidateName" />
+          </div>
+          <div class="form-group">
+            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+            <input type="password" name="your_pass" id="your_pass" placeholder="Password" formControlName="password" />
+          </div>
+          <div class="form-group">
+            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+            <input type="number" name="your_name" id="your_name" placeholder="Number of Challenges Solved"
+              formControlName="challengesSolved" />
+          </div>
+          <div class="form-group">
+            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+            <input type="number" max="5" min="0" name="your_name" id="exp_level" placeholder="Expertise Level"
+              formControlName="expertiseLevel" />
+          </div>
+
+        </form>
+
+        <p>Add Skills</p>
+        <div class="skillslist-cls">
+
+          <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon" matTooltip="Add skill"
+            (click)="addSkills()">
+            <mat-icon>add</mat-icon>
+          </button>
+          <div class="skills-secion-cls" *ngFor="let skill of skillsList;let indexOfelement=index;">
+            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+            <input type="text" name="skillname" id="exp_level" [(ngModel)]="skill.skillName" placeholder="Skill Name" />
+            <input type="number" max="5" min="0" name="skillexplevel" id="exp_level" [(ngModel)]="skill.skillExpertLevel"
+              placeholder="Expertise Level" />
+            <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
+              matTooltip="delete skill" (click)="deleteSkill(indexOfelement)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group form-button">
+          <button (click)="onSubmit()" name="signin" id="signin" class="form-submit" value="Log in">Submit</button>
+        </div>
+
+      </div>
+    </div>
+    <div *ngIf="detailflag && !!candidate && !!candidateDetails" class="details-cls">
+      <h2 class="form-title">Candidate {{candidate.userName}} Details</h2>
+      <mat-card>
+        <div>
+          <!-- <div class="cardheader">Candidate Name :<span class="nameplate"> {{candidate.userName}}</span></div> -->
+          <div class="cardbody">
+            <div class="candidateExplevel-cls">
+              <span>Challenges Solved : {{candidateDetails.candidateChallSolved}}</span>
+              <span>Expertise Level : {{candidateDetails.candidateExperLevel}}</span>
+            </div>
+            <h2>Skills</h2>
+            <div class="skills-cls" *ngFor="let skill of candidateDetails.candidateSkills">
+
+              <div>Skill Name : {{skill.skillName}}</div>
+              <div>Expertise Level :{{skill.skillExpertLevel}}</div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</section>

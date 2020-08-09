@@ -1,0 +1,72 @@
+.pagewrapper{
+  width:100%;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: center;
+  min-height: 100%;
+  background-color: aquamarine;
+}
+.logo-cls{
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.pageheader{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.pageheader h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: gray;
+  padding-top:12px;
+}
+
+.authheader{
+  padding:12px;
+}
+
+.authheader button {
+  margin:5px;
+}
+
+.cardList{
+  margin:12px;
+  box-shadow:0px 2px 1px -1px rgba(0, 0, 0, 0.19),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0, 0, 0, 0.37);
+
+}
+
+.cardheader{
+  margin-bottom: 16px;
+  font-size: x-large;
+}
+
+.cardbody{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  font-size: larger;
+  padding: 6px;
+}
+
+.actionsection{
+  min-height: 45px;
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.actionsection button {
+  margin:10px;
+}
+
+.nameplate{
+  color:blueviolet!important;
+}
+
+.pagebody{
+  width:70%;
+}

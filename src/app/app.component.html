@@ -1,0 +1,42 @@
+<div class="pagewrapper">
+  <div class="pageheader">
+    <h1>{{title}}</h1><h5 class="logo-cls">Brought to you by Coda Global</h5>
+    <div class="authheader">
+      <button mat-mini-fab color="primary"  aria-label="Example icon button with a menu icon" matTooltip="Add new Candidate" (click)="addNewUser()">
+        <mat-icon>add</mat-icon>
+      </button>
+      <button mat-raised-button color="primary" color="warn" aria-label="Example icon button with a menu icon" matTooltip="Login" *ngIf="!loggedIn" (click)="login()">
+        Login
+      </button>
+      <button mat-raised-button color="primary" color="accent" aria-label="Example icon button with a menu icon" matTooltip="Logout" *ngIf="loggedIn" (click)="logout()">
+        Logout
+      </button>
+  </div>
+  </div>
+  <div class="pagebody">
+    <div *ngIf="candidateList.length == 0">There are no candidates</div>
+  <div *ngFor="let candidate of candidateList" class="cardList">
+    <mat-card><div>
+      <div class="cardheader">Candidate Name :<span class="nameplate"> {{candidate.userName}}</span></div>
+      <div class="cardbody">
+        <span>Challenges Solved : {{candidate.candidate.candidateChallSolved}}</span>
+        <span>Expertise Level : {{candidate.candidate.candidateExperLevel}}</span>
+      </div>
+      <div class="actionsection">
+        <button mat-mini-fab color="primary" color="warn" aria-label="Example icon button with a menu icon" matTooltip="Delete This Candidate" (click)="deleteCandidate(candidate)">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-mini-fab color="primary" color="accent" aria-label="Example icon button with a menu icon" matTooltip="Edit This Candidate not Implemented" (click)="editDetails(candidate)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <!--  -->
+        <button mat-raised-button color="primary" [matBadge]="candidate.votesCount == null ? 0 : candidate.votesCount "
+           matBadgePosition="after" matBadgeColor="accent" (click)="castVote(candidate)" matTooltip="Vote for this Candidate">Vote
+       </button>
+       <button mat-raised-button color="primary" (click)="seeDetails(candidate)" matTooltip="See Full details Of the candidate">Details
+       </button>
+      </div>
+    </div></mat-card>
+  </div>
+  </div>
+</div>
